@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+
+
+section{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+/* Style the first page */
+.one {
+    background-image: linear-gradient(to right bottom,#09daa2,#002aff);
+    position: relative;
+}
+
+
+/* Style the fonts within the Welcome block*/
+.one h1{
+    font-size: 120px;
+    color:azure;
+    text-shadow: 3px 3px 3px #ff90b4;
+    position:absolute;
+    top:260px;
+    left:60px;
+}
+
+.one h2{
+    font-size: 80px;
+    color: azure;
+    text-shadow: 1px 1px 3px #ff90b4;
+    position: absolute;
+    top: 400px;
+    left: 170px;
+    animation-delay: 0.5s
+}
+
+.one h3{
+    font-size: 30px;
+    color: #ffbfbf;
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    font-family: Copperplate;
+    animation-delay: 1s;
+}
+
+
+/* Style the second page */
+.two {
+    background-image: linear-gradient(to right bottom,#c3ff5a, #0098a9);
+}
+
+
+
+/* Style the second page */
+.three {
+    background-image: linear-gradient(to right bottom,#ffdc6e,#f54949);
+}
+
+
+.animation{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+::-webkit-scrollbar{
+    width:1em;
+}
+
+::-webkit-scrollbar-track{
+    background:azure;
+    border-radius: 90vw;
+    margin-block: 0.5em;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ff7da7;
+    border:.15em solid azure;
+    border-radius: 90vw;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #ff5a6e;
+}
