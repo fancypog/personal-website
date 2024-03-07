@@ -1,2 +1,2 @@
 # personal-website
-Work in Progress
+[Link](https://fancypog.github.io/personal-website/)
