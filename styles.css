@@ -17,15 +17,13 @@
 
 section{
     height:100vh;
-    display: flex;
-    justify-content: center;
     scroll-snap-align: start;
 }
 
 /* Style the first page */
 .one {
     background-image: linear-gradient(to right bottom,#09daa2,#002aff);
-    position: relative;
+
 }
 
 
@@ -59,25 +57,29 @@ section{
     animation-delay: 1s;
 }
 
-
-/* Style the second page */
-.two {
-    background-image: linear-gradient(to right bottom,#c3ff5a, #0098a9);
+.links {
+    position: absolute;
+    top: 490px;
+    left:850px;
+    animation-delay: 1s;
 }
-
-
-
-/* Style the second page */
-.three {
-    background-image: linear-gradient(to right bottom,#ffdc6e,#f54949);
-}
-
 
 .animation{
     opacity: 0;
     transform: translateY(30px);
     animation: moveup 0.5s linear forwards;
 }
+
+.animation.links img {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+    height: 40px;
+    margin: 6px;
+    border-radius: 3px;
+    animation-delay: 1.5s;
+}
+
 
 @keyframes moveup{
     100%{
