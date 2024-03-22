@@ -1,2 +1,2 @@
 # personal-website
-[Link](https://fancypog.github.io/personal-website/)
+Visit: https://fancypog.github.io/personal-website/
